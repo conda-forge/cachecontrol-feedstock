@@ -19,12 +19,15 @@ in terms of caching.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/cachecontrol-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cachecontrol-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/cachecontrol-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/cachecontrol-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cachecontrol/badges/version.svg)](https://anaconda.org/conda-forge/cachecontrol)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cachecontrol/badges/downloads.svg)](https://anaconda.org/conda-forge/cachecontrol)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cachecontrol-green.svg)](https://anaconda.org/conda-forge/cachecontrol) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cachecontrol.svg)](https://anaconda.org/conda-forge/cachecontrol) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cachecontrol.svg)](https://anaconda.org/conda-forge/cachecontrol) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cachecontrol.svg)](https://anaconda.org/conda-forge/cachecontrol) |
 
 Installing cachecontrol
 =======================
