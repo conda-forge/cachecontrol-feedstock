@@ -1,6 +1,6 @@
 {% set name = "CacheControl" %}
-{% set version = "0.12.4" %}
-{% set sha256 = "a7d21ba4e3633d95ac9fed5be205ee6d1da36bdc4b8914eb7a57ff50b7e5628c" %}
+{% set version = "0.12.5" %}
+{% set sha256 = "cef77effdf51b43178f6a2d3b787e3734f98ade253fa3187f3bb7315aaa42ff7" %}
 
 package:
   name: {{ name|lower }}
