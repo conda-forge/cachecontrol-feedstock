@@ -19,7 +19,7 @@ build:
     - doesitcache = cachecontrol._cmd:main
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
