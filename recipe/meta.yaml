@@ -1,6 +1,6 @@
 {% set name = "CacheControl" %}
-{% set version = "0.12.5" %}
-{% set sha256 = "cef77effdf51b43178f6a2d3b787e3734f98ade253fa3187f3bb7315aaa42ff7" %}
+{% set version = "0.11.7" %}
+{% set sha256 = "8f7829d92584f1f2360ebfff4517ee359787d5b7dfa2ef9579f871b628745a1e" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,6 @@ requirements:
   run:
     - python
     - requests
-    - msgpack-python
 
 test:
   imports:
