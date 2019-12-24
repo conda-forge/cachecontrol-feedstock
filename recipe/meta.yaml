@@ -1,6 +1,6 @@
 {% set name = "CacheControl" %}
-{% set version = "0.12.5" %}
-{% set sha256 = "cef77effdf51b43178f6a2d3b787e3734f98ade253fa3187f3bb7315aaa42ff7" %}
+{% set version = "0.12.6" %}
+{% set sha256 = "be9aa45477a134aee56c8fac518627e1154df063e85f67d4f83ce0ccc23688e8" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - doesitcache = cachecontrol._cmd:main
 
