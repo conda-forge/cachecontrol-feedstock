@@ -12,18 +12,18 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - doesitcache = cachecontrol._cmd:main
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - requests
-    - msgpack-python
+    - msgpack-python >=0.5.2
 
 test:
   requires:
@@ -38,7 +38,7 @@ about:
   home: https://github.com/ionrock/cachecontrol
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE.txt
+  license_file: Apache-2.0.txt
   summary: The httplib2 caching algorithms packaged up for use with requests
   description: |
     CacheControl is a port of the caching algorithms in httplib2 for use with
