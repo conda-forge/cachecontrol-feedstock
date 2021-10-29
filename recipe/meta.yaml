@@ -1,5 +1,5 @@
 {% set name = "CacheControl" %}
-{% set version = "0.12.6" %}
+{% set version = "0.12.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be9aa45477a134aee56c8fac518627e1154df063e85f67d4f83ce0ccc23688e8
+  sha256: f818f4851af250da0d0be644a2f3eedf79cfc10f33391fa478d21b306af2a990
 
 build:
   number: 0
@@ -39,7 +39,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'The httplib2 caching algorithms packaged up for use with requests'
+  summary: The httplib2 caching algorithms packaged up for use with requests
   description: |
     CacheControl is a port of the caching algorithms in httplib2 for use with
     requests session object.
