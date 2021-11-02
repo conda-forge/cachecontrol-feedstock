@@ -1,5 +1,5 @@
 {% set name = "CacheControl" %}
-{% set version = "0.12.7" %}
+{% set version = "0.12.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f818f4851af250da0d0be644a2f3eedf79cfc10f33391fa478d21b306af2a990
+  sha256: 254043c1bab748c89c09a890f9128a0fb2c654e946bcf473c12d29fdf9cb6c5b
 
 build:
   number: 0
