@@ -10,7 +10,7 @@ source:
   sha256: 9c2e5208ea76ebd9921176569743ddf6d7f3bb4188dbf61806f0f8fc48ecad38
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -24,6 +24,8 @@ requirements:
     - python >=3.6
     - requests
     - msgpack-python >=0.5.2
+    # filecache extra
+    - filelock >=3.8.0
 
 test:
   requires:
