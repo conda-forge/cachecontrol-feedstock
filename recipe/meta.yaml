@@ -33,7 +33,7 @@ outputs:
         - python >=3.6
         - requests
         - msgpack-python >=0.5.2
-    test:
+    test: &test
       requires:
         - pip
       imports:
@@ -52,13 +52,7 @@ outputs:
         - {{ pin_subpackage("cachecontrol", exact=True) }}
         - python >=3.6
         - redis-py >=2.10.5
-    test:
-      requires:
-        - pip
-      imports:
-        - cachecontrol
-      commands:
-        - pip check
+    test: *test
 
   - name: cachecontrol-with-filecache
     build:
@@ -70,6 +64,7 @@ outputs:
         - {{ pin_subpackage("cachecontrol", exact=True) }}
         - lockfile >=0.9
         - python >=3.6
+    test: *test
 
 about:
   home: https://github.com/ionrock/cachecontrol
