@@ -39,6 +39,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cachecontrol-green.svg)](https://anaconda.org/conda-forge/cachecontrol) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cachecontrol.svg)](https://anaconda.org/conda-forge/cachecontrol) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cachecontrol.svg)](https://anaconda.org/conda-forge/cachecontrol) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cachecontrol.svg)](https://anaconda.org/conda-forge/cachecontrol) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cachecontrol--with--filecache-green.svg)](https://anaconda.org/conda-forge/cachecontrol-with-filecache) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cachecontrol-with-filecache.svg)](https://anaconda.org/conda-forge/cachecontrol-with-filecache) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cachecontrol-with-filecache.svg)](https://anaconda.org/conda-forge/cachecontrol-with-filecache) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cachecontrol-with-filecache.svg)](https://anaconda.org/conda-forge/cachecontrol-with-filecache) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cachecontrol--with--redis-green.svg)](https://anaconda.org/conda-forge/cachecontrol-with-redis) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cachecontrol-with-redis.svg)](https://anaconda.org/conda-forge/cachecontrol-with-redis) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cachecontrol-with-redis.svg)](https://anaconda.org/conda-forge/cachecontrol-with-redis) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cachecontrol-with-redis.svg)](https://anaconda.org/conda-forge/cachecontrol-with-redis) |
 
 Installing cachecontrol
 =======================
@@ -50,16 +52,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cachecontrol` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `cachecontrol, cachecontrol-with-filecache, cachecontrol-with-redis` can be installed with `conda`:
 
 ```
-conda install cachecontrol
+conda install cachecontrol cachecontrol-with-filecache cachecontrol-with-redis
 ```
 
 or with `mamba`:
 
 ```
-mamba install cachecontrol
+mamba install cachecontrol cachecontrol-with-filecache cachecontrol-with-redis
 ```
 
 It is possible to list all of the versions of `cachecontrol` available on your platform with `conda`:
