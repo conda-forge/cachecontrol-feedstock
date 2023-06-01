@@ -31,7 +31,7 @@ outputs:
         - pip
       run:
         - python >=3.6
-        - requests
+        - requests >=2.16.0
         - msgpack-python >=0.5.2
     test: &test
       requires:
