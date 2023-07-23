@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/C/CacheControl/CacheControl-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/C/CacheControl/cachecontrol-{{ version }}.tar.gz
   sha256: fd3fd2cb0ca66b9a6c1d56cc9709e7e49c63dbd19b1b1bcbd8d3f94cedfe8ce5
 
 build:
