@@ -9,7 +9,7 @@ source:
   sha256: 7db1195b41c81f8274a7bbd97c956f44e8348265a1bc7641c37dfebc39f0c938
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -22,17 +22,18 @@ outputs:
   - name: cachecontrol
     build:
       noarch: python
-      script: {{ PYTHON }} -m pip install . -vv --no-deps
+      script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
       entry_points:
         - doesitcache = cachecontrol._cmd:main
     requirements:
       host:
         - python >=3.7
+        - flit-core >=3.2,<4
         - pip
       run:
         - python >=3.7
         - requests >=2.16.0
-        - msgpack-python >=0.5.2
+        - msgpack-python >=0.5.2,<2.0.0
     test: &test
       requires:
         - pip
