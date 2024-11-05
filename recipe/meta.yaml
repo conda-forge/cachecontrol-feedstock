@@ -63,7 +63,7 @@ outputs:
         - python >=3.8
       run:
         - {{ pin_subpackage("cachecontrol", exact=True) }}
-        - filelock >= 3.8.0
+        - filelock >=3.8.0
         - python >=3.8
     test: *test
 
