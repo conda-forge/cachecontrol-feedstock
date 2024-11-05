@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: cachecontrol-split
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/C/CacheControl/cachecontrol-{{ version }}.tar.gz
-  sha256: 7db1195b41c81f8274a7bbd97c956f44e8348265a1bc7641c37dfebc39f0c938
+  sha256: 06ef916a1e4eb7dba9948cdfc9c76e749db2e02104a9a1277e8b642591a0f717
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
 
 outputs:
   - name: cachecontrol
@@ -27,11 +27,11 @@ outputs:
         - doesitcache = cachecontrol._cmd:main
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
         - flit-core >=3.2,<4
         - pip
       run:
-        - python >=3.7
+        - python >=3.8
         - requests >=2.16.0
         - msgpack-python >=0.5.2,<2.0.0
     test: &test
@@ -48,10 +48,10 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
       run:
         - {{ pin_subpackage("cachecontrol", exact=True) }}
-        - python >=3.7
+        - python >=3.8
         - redis-py >=2.10.5
     test: *test
 
@@ -60,11 +60,11 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7
+        - python >=3.8
       run:
         - {{ pin_subpackage("cachecontrol", exact=True) }}
         - filelock >=3.8.0
-        - python >=3.7
+        - python >=3.8
     test: *test
 
 about:
