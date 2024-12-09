@@ -12,12 +12,6 @@ build:
   number: 1
   noarch: python
 
-requirements:
-  host:
-    - python {{ python_min }}
-  run:
-    - python >={{ python_min }}
-
 outputs:
   - name: cachecontrol
     build:
@@ -68,8 +62,7 @@ outputs:
         - python >={{ python_min }}
     test: *test
 
-requires:
-- python {{ python_min }}
+
 about:
   home: https://github.com/ionrock/cachecontrol
   license: Apache-2.0
