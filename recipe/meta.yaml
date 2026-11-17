@@ -1,12 +1,12 @@
-{% set version = "0.14.4" %}
+{% set version = "0.15.0" %}
 
 package:
   name: cachecontrol-split
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/C/CacheControl/cachecontrol-{{ version }}.tar.gz
-  sha256: e6220afafa4c22a47dd0badb319f84475d79108100d04e26e8542ef7d3ab05a1
+  url: https://files.pythonhosted.org/packages/source/C/CacheControl/cachecontrol-{{ version }}.tar.gz
+  sha256: 52157b539eb64d85c8c793660e86cf05cf95fad7b98c8ef6846e4a0ddffdb193
 
 build:
   number: 0
