@@ -3,22 +3,13 @@ About cachecontrol-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cachecontrol-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ionrock/cachecontrol
+Home: https://pypi.org/project/CacheControl/
 
 Package license: Apache-2.0
 
-Summary: The httplib2 caching algorithms packaged up for use with requests
+Summary: httplib2 caching for requests
 
-Development: https://github.com/ionrock/cachecontrol
-
-Documentation: http://cachecontrol.readthedocs.io/
-
-CacheControl is a port of the caching algorithms in httplib2 for use with
-requests session object.
-It was written because httplib2's better support for caching is often
-mitigated by its lack of threadsafety. The same is true of requests
-in terms of caching.
-
+Development: https://github.com/psf/cachecontrol
 
 Current build status
 ====================
